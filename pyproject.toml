@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shamirsplit"
+version = "1.0.0"
+description = "Pure Python Shamir secret sharing and reconstruction CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "ShamirSplit Project"}]
+dependencies = []
+
+[project.scripts]
+shamirsplit = "shamirsplit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["shamirsplit*"]
